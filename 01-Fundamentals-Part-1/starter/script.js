@@ -1,18 +1,18 @@
-// const country = "Poland";
-// const continent = "Europe";
-// let population = 36;
+const country = "Poland";
+const continent = "Europe";
+let population = 36;
 // console.log(country);
 // console.log(continent);
 // console.log(population);
 
-// const isIsland = false;
-// let language;
+const isIsland = false;
+let language;
 // console.log(isIsland);
 // console.log(population);
 // console.log(country);
 // console.log(language);
 
-// language = "Polish";
+language = "Polish";
 
 // console.log(population / 2);
 // console.log(population);
@@ -27,16 +27,18 @@
 //   " milions people speaking " +
 //   language;
 
-// console.log(description);
+const description = `${country} is in ${continent}, and its ${population} milions people speaking ${language}`;
 
-let markWeight = 78;
-let markHeight = 1.69;
-let johnWeight = 92;
-let johnHeight = 1.95;
+console.log(description);
 
-let markBMI = markWeight / markHeight ** 2;
-let johnBMI = johnWeight / johnHeight ** 2;
+// let markWeight = 78;
+// let markHeight = 1.69;
+// let johnWeight = 92;
+// let johnHeight = 1.95;
 
-let markHigherBMI = markBMI > johnBMI;
+// let markBMI = markWeight / markHeight ** 2;
+// let johnBMI = johnWeight / johnHeight ** 2;
 
-console.log(markBMI, johnBMI, markHigherBMI);
+// let markHigherBMI = markBMI > johnBMI;
+
+// console.log(markBMI, johnBMI, markHigherBMI);
