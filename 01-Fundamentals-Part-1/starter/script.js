@@ -56,4 +56,5 @@ const description = `${country} is in ${continent}, and its ${population} milion
 // }
 
 if (language === "English" && population < 50 && isIsland === false) {
-}
+  console.log(`You should live in ${country}`);
+} else console.log(`${country} does not meet your criteria :(`);
