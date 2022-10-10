@@ -55,6 +55,14 @@ const description = `${country} is in ${continent}, and its ${population} milion
 //   console.log(`No borders`);
 // }
 
-if (language === "English" && population < 50 && isIsland === false) {
-  console.log(`You should live in ${country}`);
-} else console.log(`${country} does not meet your criteria :(`);
+// if (language === "English" && population < 50 && isIsland === false) {
+//   console.log(`You should live in ${country}`);
+// } else console.log(`${country} does not meet your criteria :(`);
+
+const dolphinsAvg = (97 + 112 + 101) / 3;
+const koalasAvg = (109 + 95 + 106) / 3;
+if (dolphinsAvg === koalasAvg && dolphinsAvg >= 100 && koalasAvg >= 100) {
+  console.log("There is a draw");
+} else if (dolphinsAvg > koalasAvg && dolphinsAvg >= 100) {
+  console.log("The winner is Dolphins");
+} else if (koalasAvg >= 100) console.log("The winner is Koalas");
