@@ -59,10 +59,39 @@ const description = `${country} is in ${continent}, and its ${population} milion
 //   console.log(`You should live in ${country}`);
 // } else console.log(`${country} does not meet your criteria :(`);
 
-const dolphinsAvg = (97 + 112 + 101) / 3;
-const koalasAvg = (109 + 95 + 106) / 3;
-if (dolphinsAvg === koalasAvg && dolphinsAvg >= 100 && koalasAvg >= 100) {
-  console.log("There is a draw");
-} else if (dolphinsAvg > koalasAvg && dolphinsAvg >= 100) {
-  console.log("The winner is Dolphins");
-} else if (koalasAvg >= 100) console.log("The winner is Koalas");
+// const dolphinsAvg = (97 + 112 + 101) / 3;
+// const koalasAvg = (109 + 95 + 106) / 3;
+// if (dolphinsAvg === koalasAvg && dolphinsAvg >= 100 && koalasAvg >= 100) {
+//   console.log("There is a draw");
+// } else if (dolphinsAvg > koalasAvg && dolphinsAvg >= 100) {
+//   console.log("The winner is Dolphins");
+// } else if (koalasAvg >= 100) console.log("The winner is Koalas");
+
+const day = "friday";
+
+if (day === "wednesday" || day === "thursday") {
+  console.log(`its wednesday or thursday`);
+} else if (day === "friday") {
+  console.log(`it's friday`);
+}
+
+switch (language) {
+  case `chinese`:
+  case `mandarin`:
+    console.log(`MOST number of native speakers!`);
+    break;
+  case `spanish`:
+    console.log(`2nd place in number of native speakers`);
+    break;
+  case `english`:
+    console.log(`3rd place`);
+    break;
+  case `hindi`:
+    console.log(`Number 4`);
+    break;
+  case `arabic`:
+    console.log(`5th most spoken language`);
+    break;
+  default:
+    console.log(`great language too :D`);
+}
