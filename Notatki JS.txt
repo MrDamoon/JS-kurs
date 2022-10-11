@@ -1,0 +1,90 @@
+//Tworzenie zmiennych
+
+//Nazwę zmiennej zaczynać od małych liter, kolejne słowa w nazwie z wielkiej litery
+
+var oldVariable; //stara opcja
+let newVariable; //nowa opcja
+
+//Tworzenie stałych
+
+const firstName = "Damian";
+
+//Teksty ze zmiennymi
+
+const description = `${country} is in ${continent}, and its ${population} milions people speaking ${language}`;
+
+//Obliczenia na zmiennych
+
+let markBMI = markWeight / markHeight ** 2;
+let johnBMI = johnWeight / johnHeight ** 2;
+const dolphinsAvg = (97 + 112 + 101) / 3;
+const koalasAvg = (109 + 95 + 106) / 3;
+
+
+//if
+
+if(warunek){
+    jeżeli true;
+}else if(warunek){
+    jeżeli true;
+}else{
+    jeżeli false;
+}
+
+//warunki
+
+Porównywanie 
+=== //jeżeli ta sama wartość i typ zmiennej,
+== //jeżeli inny typ zmiennej (nie polecane);
+AND &&;
+OR ||;
+NOT !;
+
+//przykład
+if (day === "wednesday" || day === "thursday") {
+  console.log(`its wednesday or thursday`);
+} else if (day === "friday") {
+  console.log(`it's friday`);
+}
+
+
+//switch
+
+switch (warunek){
+    case `opcja1`:
+        jeśli true;
+        break;
+    case `opcja2`:
+        jeśli true;
+        break;
+    default:
+        jeśli żadna opcja nie pasuje;
+}
+
+//Strict mode
+"use strict" //po to żeby pokazywało nam wszystkie błędy
+
+//funkcje
+
+//zwykła funkcja
+
+function nazwa(parametr1, parametr2){
+    let parametr3 = parametr1 * parametr2;
+    return parametr3;
+}
+
+nazwa(2,3); //użycie funkcji
+
+//anonimowa funkcja
+
+const nazwa2 = function(parametr1, parametr2){
+    let parametr3 = parametr1 * parametr2;
+    return parametr3;
+}
+
+nazwa2(2,3); //użycie funkcji
+
+//arrow function
+
+let parametr3 = (parametr1, parametr2) => parametr1 * parametr2;
+console.log(parametr3(3, 3))
