@@ -16,5 +16,28 @@ const polandDescribe = describeCountry("poland", 36, "warsaw");
 const germanyDescribe = describeCountry("germany", 70, "berlin");
 const usaDescribe = describeCountry("usa", 360, "washinton");
 
-let nazwa3 = (parametr1, parametr2) => parametr1 * parametr2;
-console.log(nazwa3(3, 3));
+function percentageOfWorld1(population) {
+  let percentage = (population / 7900) * 100;
+  return percentage;
+}
+
+let polandPercentage = percentageOfWorld1(36);
+let germanyPercentage = percentageOfWorld1(70);
+let usaPercentage = percentageOfWorld1(360);
+
+console.log(polandPercentage, germanyPercentage, usaPercentage);
+
+const percentageOfWorld2 = function (population) {
+  let percentage = (population / 7900) * 100;
+  return percentage;
+};
+let polandPercentage2 = percentageOfWorld2(36);
+let germanyPercentage2 = percentageOfWorld2(70);
+let usaPercentage2 = percentageOfWorld2(360);
+console.log(polandPercentage2, germanyPercentage2, usaPercentage2);
+
+let percentageOfWorld3 = (population) => (population / 7900) * 100;
+let polandPercentage3 = percentageOfWorld3(36);
+let germanyPercentage3 = percentageOfWorld3(70);
+let usaPercentage3 = percentageOfWorld3(360);
+console.log(polandPercentage3, germanyPercentage3, usaPercentage3);

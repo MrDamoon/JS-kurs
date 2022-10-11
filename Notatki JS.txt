@@ -87,4 +87,5 @@ nazwa2(2,3); //użycie funkcji
 //arrow function
 
 let parametr3 = (parametr1, parametr2) => parametr1 * parametr2;
+//Opcjonalnie w {} jeżeli więcej linijek
 console.log(parametr3(3, 3))
