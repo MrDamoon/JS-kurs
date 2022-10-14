@@ -25,7 +25,7 @@ let polandPercentage = percentageOfWorld1(36);
 let germanyPercentage = percentageOfWorld1(70);
 let usaPercentage = percentageOfWorld1(360);
 
-console.log(polandPercentage, germanyPercentage, usaPercentage);
+// console.log(polandPercentage, germanyPercentage, usaPercentage);
 
 const percentageOfWorld2 = function (population) {
   let percentage = (population / 7900) * 100;
@@ -34,10 +34,18 @@ const percentageOfWorld2 = function (population) {
 let polandPercentage2 = percentageOfWorld2(36);
 let germanyPercentage2 = percentageOfWorld2(70);
 let usaPercentage2 = percentageOfWorld2(360);
-console.log(polandPercentage2, germanyPercentage2, usaPercentage2);
+// console.log(polandPercentage2, germanyPercentage2, usaPercentage2);
 
 let percentageOfWorld3 = (population) => (population / 7900) * 100;
 let polandPercentage3 = percentageOfWorld3(36);
 let germanyPercentage3 = percentageOfWorld3(70);
 let usaPercentage3 = percentageOfWorld3(360);
-console.log(polandPercentage3, germanyPercentage3, usaPercentage3);
+// console.log(polandPercentage3, germanyPercentage3, usaPercentage3);
+
+function describePopulation(country, population) {
+  return `${country} has ${population} milion people, which is about ${percentageOfWorld1(
+    population
+  )}% of the world`;
+}
+
+// console.log(describePopulation("poland", 36));
