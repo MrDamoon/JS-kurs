@@ -49,3 +49,24 @@ function describePopulation(country, population) {
 }
 
 // console.log(describePopulation("poland", 36));
+
+//Coding challenge #1
+
+const calcAverage = (store1, store2, store3) => (store1 + store2 + store3) / 3;
+// const avgDolphins = calcAverage(44, 23, 71);
+// const avgKoalas = calcAverage(65, 54, 49);
+
+const avgDolphins = calcAverage(85, 54, 41);
+const avgKoalas = calcAverage(23, 34, 27);
+
+console.log(avgDolphins, avgKoalas);
+
+function checkWinner(avgDolphins, avgKoalas) {
+  if (avgDolphins >= avgKoalas * 2) {
+    console.log(`Doplhins win (${avgDolphins} vs ${avgKoalas})`);
+  } else if (avgDolphins * 2 <= avgKoalas) {
+    console.log(`Koalas win (${avgDolphins} vs ${avgKoalas})`);
+  } else console.log(`noone win`);
+}
+
+checkWinner(avgDolphins, avgKoalas);
