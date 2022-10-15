@@ -89,3 +89,16 @@ nazwa2(2,3); //użycie funkcji
 let parametr3 = (parametr1, parametr2) => parametr1 * parametr2;
 //Opcjonalnie w {} jeżeli więcej linijek
 console.log(parametr3(3, 3))
+
+
+//Tabele
+
+const friends = ['a','b','c']; //deklarowanie tabeli
+friends[0]; //wartość elementu tabeli
+friends.push('d'); //Dodanie wartości na koniec tabeli
+friends.unshift('e'); //Dodanie wartości na początek tabeli
+friends.pop('d'); //Usunięcie wartości z końca tabeli
+friends.shift('e'); //Usunięcie wartości z początku tabeli
+friends.indexOf('a'); //Podanie kolejności danego elementu
+friends.includes('a'); //Sprawdzenie czy dany element występuje w tabeli true/false
+let usuniete = friends.pop('d'); //Przypisanie do zmiennej usuniętej wartości
